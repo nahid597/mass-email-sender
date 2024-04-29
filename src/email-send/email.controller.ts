@@ -13,11 +13,13 @@ export class EmailSenderController {
   }
 
   @Post()
-  sendEmails(
+  async sendEmails(
     @Res() res: Response,
     @Body() emailsData: EmailSenderDto,
-  ): Response {
+  ): Promise<Response> {
     console.log(emailsData);
-    return res.status(201).send(this.emailService.sendMassEmails(emailsData));
+    return res
+      .status(201)
+      .send(await this.emailService.sendMassEmails(emailsData));
   }
 }
