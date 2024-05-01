@@ -2,12 +2,14 @@ import { Injectable } from '@nestjs/common';
 import { EmailSenderDto } from 'src/dto/email.sender.dto';
 import { ConfigService } from '@nestjs/config';
 import MailService from 'src/common/mail.service';
+import { SendEmailProducerService } from 'src/common/producer.service';
 
 @Injectable()
 export class EmailSenderService {
   constructor(
     private readonly config: ConfigService,
     private readonly mailService: MailService,
+    private readonly emailSendQueue: SendEmailProducerService,
   ) {}
 
   getEmail(): string {
@@ -19,20 +21,10 @@ export class EmailSenderService {
     const allEmails: string[] = emails.split(',');
 
     for (const email of allEmails) {
-      console.log(email);
+      await this.emailSendQueue.addJob(email);
     }
 
-    await this.mailService.createConnection();
-
-    const res = await this.mailService.sendMail({
-      from: 'nahidh597@gmail.com',
-      to: 'test.nahid.56@yopmail.com',
-      subject: 'Mass-email send from Nahid Hasan',
-      text: 'THis is test email. so do not freak out',
-      html: '<b>THis is test email html part. We can skip it </b>',
-    });
-
-    return res;
+    return 'All emails send by BullMQ automatic';
   }
 
   sendMailToUser(emailAddress: string) {
