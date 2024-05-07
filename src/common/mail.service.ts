@@ -45,7 +45,7 @@ export default class MailService {
     html: string;
   }): Promise<string> {
     const info = await this.transporter.sendMail({
-      from: `"test mass email sender" <${this.config.get('SMTP_SENDER')}>`,
+      from: `"Test mass email sender" <${this.config.get('SMTP_SENDER')}>`,
       to: options.to,
       subject: options.subject,
       text: options.text,
