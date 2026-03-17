@@ -1,30 +1,41 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Mass-Email-Sender 📧
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+**Mass-Email-Sender** is a high-reliability, automated communication tool designed to handle bulk email distribution with precision and fault tolerance. Built with the MERN stack, it provides a secure interface for managing large-scale outreach while ensuring delivery integrity.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+---
 
-## Description
+## 🚀 Overview
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+In high-integrity environments, communication systems must be **dependable and verifiable**. This project focuses on the "Reliability" pillar of software engineering, implementing structured queue management and error handling to ensure that bulk operations do not compromise system stability.
+
+### Key Features:
+* **Bulk Distribution Engine:** Capable of processing large recipient lists with high throughput.
+* **Template Customization:** Dynamic HTML template injection for personalized communication.
+* **Delivery Status Tracking:** Real-time feedback on successful and failed delivery attempts.
+* **Secure SMTP Integration:** Industry-standard protocol support with encrypted credential management.
+* **Recipient Management:** Robust CRUD operations for maintaining clean and validated mailing lists.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js (Stateful form handling & Progress tracking)
+* **Backend:** Node.js & Express.js (Asynchronous processing & API routing)
+* **Database:** MongoDB (Schema-based recipient and log storage)
+* **Email Service:** Nodemailer (SMTP transport & MIME handling)
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+* Node.js (v16+)
+* An SMTP-enabled email account (e.g., Gmail App Passwords, SendGrid, or Mailgun)
+
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/nahid597/mass-email-sender.git](https://github.com/nahid597/mass-email-sender.git)
 
 ## Installation
 
